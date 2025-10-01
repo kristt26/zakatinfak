@@ -1,0 +1,467 @@
+[
+  {
+    "kategori": "ekonomi",
+    "subkategori": [
+      {
+        "nama": "indeks rumah",
+        "pertanyaan": [
+          {
+            "pertanyaan": "Ukuran rumah (m2/orang)",
+            "type": "radio",
+            "opsi": [
+              {"label": "Sangat kecil (< 4 m2)", "skor": 4},
+              {"label": "Kecil (4-6 m2)", "skor": 3},
+              {"label": "Sedang (6-8 m2)", "skor": 0},
+              {"label": "Besar (> 8 m2)", "skor": -1}
+            ]
+          },
+          {
+            "pertanyaan": "Kepemilikan Rumah",
+            "type": "radio",
+            "opsi": [
+              {"label": "Menumpang", "skor": 2},
+              {"label": "Keluarga", "skor": 1},
+              {"label": "Kontrak/Sewa", "skor": 3},
+              {"label": "Sendiri", "skor": 0}
+            ]
+          },
+          {
+            "pertanyaan": "Dinding rumah",
+            "type": "radio",
+            "opsi": [
+              {"label": "Bilik Bambu / Tripleks", "skor": 4},
+              {"label": "Kayu", "skor": 2},
+              {"label": "Semi", "skor": 1},
+              {"label": "Tembok / Beton", "skor": 0}
+            ]
+          },
+          {
+            "pertanyaan": "Lantai rumah",
+            "type": "radio",
+            "opsi": [
+              {"label": "Tanah", "skor": 4},
+              {"label": "Panggung", "skor": 2},
+              {"label": "Semen", "skor": 1},
+              {"label": "Keramik", "skor": 0}
+            ]
+          },
+          {
+            "pertanyaan": "Atap",
+            "type": "radio",
+            "opsi": [
+              {"label": "Kirai / Ijuk", "skor": 3},
+              {"label": "Seng", "skor": 1},
+              {"label": "Asbes / Glazur", "skor": 1},
+              {"label": "Genteng", "skor": 1}
+            ]
+          },
+          {
+            "pertanyaan": "Ventilasi",
+            "type": "radio",
+            "opsi": [
+              {"label": "Ada, layak", "skor": 0},
+              {"label": "Ada, kurang layak", "skor": 2},
+              {"label": "Tidak ada", "skor": 3}
+            ]
+          },
+          {
+            "pertanyaan": "Plafon",
+            "type": "radio",
+            "opsi": [
+              {"label": "Ada, layak", "skor": 0},
+              {"label": "Ada, kurang layak", "skor": 2},
+              {"label": "Tidak ada", "skor": 3}
+            ]
+          },
+          {
+            "pertanyaan": "MCK",
+            "type": "radio",
+            "opsi": [
+              {"label": "Sendiri, di dalam", "skor": 0},
+              {"label": "Sendiri, di luar", "skor": 1},
+              {"label": "Berbagi pakai", "skor": 2},
+              {"label": "Tidak ada", "skor": 3}
+            ]
+          },
+          {
+            "pertanyaan": "Sumber air untuk MCK",
+            "type": "radio",
+            "opsi": [
+              {"label": "PDAM", "skor": 0},
+              {"label": "Sumur", "skor": 1},
+              {"label": "Sungai", "skor": 2},
+              {"label": "Air hujan", "skor": 3}
+            ]
+          },
+          {
+            "pertanyaan": "Sumber air minum",
+            "type": "radio",
+            "opsi": [
+              {"label": "PDAM", "skor": 0},
+              {"label": "Sumur", "skor": 1},
+              {"label": "Sungai", "skor": 2},
+              {"label": "Air hujan", "skor": 3},
+              {"label": "Galon (air kemasan)", "skor": -1}
+            ]
+          },
+          {
+            "pertanyaan": "Daya listrik rumah",
+            "type": "radio",
+            "opsi": [
+              {"label": "450 kWh", "skor": 3},
+              {"label": "900 kWh", "skor": 2},
+              {"label": "1300 kWh", "skor": 0},
+              {"label": "> 1300 kWh", "skor": -1}
+            ]
+          },
+          {
+            "pertanyaan": "Dapur",
+            "type": "radio",
+            "opsi": [
+              {"label": "Tersendiri", "skor": 0},
+              {"label": "Terpisah", "skor": 1}
+            ]
+          },
+          {
+            "pertanyaan": "Alat Dapur",
+            "type": "radio",
+            "opsi": [
+              {"label": "Tungku", "skor": 3},
+              {"label": "Kompor Gas", "skor": 0},
+              {"label": "Kompor Minyak", "skor": 2},
+              {"label": "Kompor Listrik", "skor": -1}
+            ]
+          }
+        ]
+      },
+      {
+  "nama": "kepemilikan harta",
+  "pertanyaan": [
+    {
+      "pertanyaan": "Kepemilikan sawah / kebun",
+      "type": "radio",
+      "opsi": [
+        {"label": "Ada", "skor": 0},
+        {"label": "Tidak ada", "skor": 5}
+      ]
+    },
+    {
+      "pertanyaan": "Status kepemilikan sawah / kebun",
+      "type": "radio",
+      "opsi": [
+        {"label": "Warisan / Hibah", "skor": 0},
+        {"label": "Beli", "skor": 0},
+        {"label": "Bagi Hasil", "skor": 2},
+        {"label": "Sewa", "skor": 3}
+      ]
+    },
+    {
+      "pertanyaan": "Luas sawah / kebun",
+      "type": "radio",
+      "opsi": [
+        {"label": "<500 m2", "skor": 1},
+        {"label": "500–1.000 m2", "skor": 0},
+        {"label": "1.000–2.000 m2", "skor": -1},
+        {"label": ">2.000 m2", "skor": -2}
+      ]
+    },
+    {
+      "pertanyaan": "Ternak (ada/tidak)",
+      "type": "radio",
+      "opsi": [
+        {"label": "Ternak ada", "skor": 0},
+        {"label": "Ternak tidak ada", "skor": 5}
+      ]
+    },
+    {
+      "pertanyaan": "Jenis ternak",
+      "type": "checkbox",
+      "opsi": [
+        {"label": "Unggas", "skor": 0},
+        {"label": "Kambing", "skor": 0},
+        {"label": "Sapi", "skor": -1},
+        {"label": "Kerbau", "skor": -1}
+      ]
+    },
+    {
+      "pertanyaan": "Status kepemilikan ternak",
+      "type": "radio",
+      "opsi": [
+        {"label": "Warisan / Hibah", "skor": 0},
+        {"label": "Beli", "skor": 0},
+        {"label": "Bagi Hasil", "skor": 2},
+        {"label": "Sewa", "skor": 3}
+      ]
+    },
+    {
+      "pertanyaan": "Kendaraan (ada/tidak)",
+      "type": "radio",
+      "opsi": [
+        {"label": "Kendaraan ada", "skor": 0},
+        {"label": "Kendaraan tidak ada", "skor": 5}
+      ]
+    },
+    {
+      "pertanyaan": "Jenis kendaraan",
+      "type": "checkbox",
+      "opsi": [
+        {"label": "Sepeda", "skor": 0},
+        {"label": "Sepeda motor", "skor": 0},
+        {"label": "Mobil", "skor": -1},
+        {"label": "Mobil pick up", "skor": -1}
+      ]
+    },
+    {
+      "pertanyaan": "Status kepemilikan kendaraan",
+      "type": "radio",
+      "opsi": [
+        {"label": "Warisan / Hibah", "skor": 0},
+        {"label": "Beli", "skor": 0},
+        {"label": "Titipan", "skor": 0},
+        {"label": "Bagi Hasil", "skor": 1},
+        {"label": "Sewa", "skor": 3}
+      ]
+    },
+    {
+      "pertanyaan": "Alat komunikasi",
+      "type": "radio",
+      "opsi": [
+        {"label": "Tidak ada", "skor": 5},
+        {"label": "Featured phone (hp biasa)", "skor": 2},
+        {"label": "Android", "skor": 0},
+        {"label": "iPhone / smartphone mahal", "skor": 0}
+      ]
+    },
+    {
+      "pertanyaan": "Alat elektronik / perabot (pilih yang dimiliki)",
+      "type": "checkbox",
+      "opsi": [
+        {"label": "Televisi", "skor": -1},
+        {"label": "Kulkas", "skor": -1},
+        {"label": "Laptop", "skor": -1},
+        {"label": "Mesin cuci", "skor": -1},
+        {"label": "AC", "skor": -1},
+        {"label": "Kipas angin", "skor": -1},
+        {"label": "Dispenser", "skor": -1}
+      ]
+    },
+    {
+      "pertanyaan": "Perabotan Rumah",
+      "type": "checkbox",
+      "opsi": [
+        {"label": "Kursi", "skor": -1},
+        {"label": "Sofa", "skor": -1},
+        {"label": "Meja", "skor": -1},
+        {"label": "Lemari", "skor": -1}
+      ]
+    },
+    {
+      "pertanyaan": "Simpanan (tabungan / perhiasan)",
+      "type": "checkbox",
+      "opsi": [
+        {"label": "Emas", "skor": -1},
+        {"label": "Perak", "skor": -1},
+        {"label": "Batu berharga", "skor": -1},
+        {"label": "Tabungan", "skor": -1}
+      ]
+    }
+  ]
+},
+      {
+        "nama": "penghasilan",
+        "pertanyaan": [
+          {
+            "pertanyaan": "Pendapatan keluarga total per bulan (Rp)",
+            "type": "number",
+            "opsi": []
+          },
+          {
+            "pertanyaan": "Pengeluaran rutin keluarga per bulan (Rp)",
+            "type": "number",
+            "opsi": []
+          },
+          {
+            "pertanyaan": "Jumlah Anggota Keluarga",
+            "type": "number",
+            "opsi": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "kategori": "kesehatan",
+    "subkategori": [
+      {
+        "nama": "pola hidup",
+        "pertanyaan": [
+          {
+            "pertanyaan": "Frekuensi sakit (dalam sebulan)",
+            "type": "radio",
+            "opsi": [
+              {"label": "1-3 kali", "skor": 1},
+              {"label": "> 3 kali", "skor": 3}
+            ]
+          },
+          {
+            "pertanyaan": "Frekuensi makan (per hari)",
+            "type": "radio",
+            "opsi": [
+              {"label": "1-3 kali", "skor": 2},
+              {"label": "> 3 kali", "skor": 0}
+            ]
+          },
+          {
+            "pertanyaan": "Pembelian protein hewani (per pekan)",
+            "type": "radio",
+            "opsi": [
+              {"label": "1-3 kali", "skor": 2},
+              {"label": "> 3 kali", "skor": 0}
+            ]
+          },
+          {
+            "pertanyaan": "Penyakit kronis",
+            "type": "radio",
+            "opsi": [
+              {"label": "Tidak ada", "skor": 0},
+              {"label": "Ada", "skor": 3}
+            ]
+          },
+          {
+            "pertanyaan": "Merokok",
+            "type": "radio",
+            "opsi": [
+              {"label": "Tidak merokok", "skor": 2},
+              {"label": "Merokok", "skor": -1}
+            ]
+          }
+        ]
+      },
+      {
+        "nama": "keadaan rumah",
+        "pertanyaan": [
+          {
+            "pertanyaan": "Asuransi kesehatan",
+            "type": "radio",
+            "opsi": [
+              {"label": "Ada", "skor": 0},
+              {"label": "Tidak ada", "skor": 2}
+            ]
+          },
+          {
+            "pertanyaan": "Sanitasi (sampah & limbah RT)",
+            "type": "radio",
+            "opsi": [
+              {"label": "Baik", "skor": 0},
+              {"label": "Buruk", "skor": 1}
+            ]
+          },
+          {
+            "pertanyaan": "Sumber air minum layak?",
+            "type": "radio",
+            "opsi": [
+              {"label": "Layak", "skor": 0},
+              {"label": "Tidak layak", "skor": 1}
+            ]
+          },
+          {
+            "pertanyaan": "MCK (dari sisi kesehatan) layak?",
+            "type": "radio",
+            "opsi": [
+              {"label": "Layak", "skor": 0},
+              {"label": "Tidak layak", "skor": 1}
+            ]
+          },
+          {
+            "pertanyaan": "Dapur (kondisi) layak?",
+            "type": "radio",
+            "opsi": [
+              {"label": "Layak", "skor": 0},
+              {"label": "Tidak layak", "skor": 1}
+            ]
+          },
+          {
+            "pertanyaan": "Ventilasi rumah",
+            "type": "radio",
+            "opsi": [
+              {"label": "Tidak lembab", "skor": 0},
+              {"label": "Lembab", "skor": 1}
+            ]
+          },
+          {
+            "pertanyaan": "Lingkungan sekitar rumah",
+            "type": "radio",
+            "opsi": [
+              {"label": "Tidak kumuh", "skor": 0},
+              {"label": "Kumuh", "skor": 1}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "kategori": "keimanan",
+    "subkategori": [
+      {
+        "nama": "ibadan dan kemasyarakatan",
+        "pertanyaan": [
+          {
+            "pertanyaan": "Sholat fardhu",
+            "type": "radio",
+            "opsi": [
+              {"label": "Rajin", "skor": 2},
+              {"label": "Jarang", "skor": 0},
+              {"label": "Tidak pernah", "skor": -2}
+            ]
+          },
+          {
+            "pertanyaan": "Sholat di masjid",
+            "type": "radio",
+            "opsi": [
+              {"label": "Rajin", "skor": 2},
+              {"label": "Jarang", "skor": 0},
+              {"label": "Tidak pernah", "skor": -1}
+            ]
+          },
+          {
+            "pertanyaan": "Pengajian (keaktifan)",
+            "type": "radio",
+            "opsi": [
+              {"label": "Aktif ikut serta", "skor": 2},
+              {"label": "Jarang", "skor": 1},
+              {"label": "Tidak pernah", "skor": 0}
+            ]
+          },
+          {
+            "pertanyaan": "Kegiatan masyarakat (keaktifan)",
+            "type": "radio",
+            "opsi": [
+              {"label": "Aktif ikut serta", "skor": 2},
+              {"label": "Jarang", "skor": 1},
+              {"label": "Tidak pernah", "skor": 0}
+            ]
+          },
+          {
+            "pertanyaan": "Penampilan (tato, tindik, rambut punk)",
+            "type": "radio",
+            "opsi": [
+              {"label": "Tidak ada", "skor": 1},
+              {"label": "Ada, sudah insyaf", "skor": 0},
+              {"label": "Ada", "skor": -2}
+            ]
+          },
+          {
+            "pertanyaan": "Kebiasaan patologis (judi, miras, dll.)",
+            "type": "radio",
+            "opsi": [
+              {"label": "Tidak pernah", "skor": 1},
+              {"label": "Jarang", "skor": -1},
+              {"label": "Ada", "skor": -2}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
