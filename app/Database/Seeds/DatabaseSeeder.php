@@ -80,7 +80,7 @@ class DatabaseSeeder extends Seeder
                 'alamat'      => $faker->address,
                 'telepon'     => $faker->phoneNumber,
                 'pekerjaan'   => $faker->jobTitle,
-                'penghasilan' => $faker->randomElement(['< 1 Juta', '1-3 Juta', '3-5 Juta', '> 5 Juta']),
+                'penghasilan' => $faker->randomElement(['5000000', '6000000', '7000000', '8000000', '9000000']),
                 'email'       => $faker->safeEmail,
                 'id_users'    => $idUser
             ]);

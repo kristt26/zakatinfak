@@ -66,9 +66,9 @@ class Auth extends BaseController
                         case 'pimpinan':
                             return redirect()->to(base_url('dashboard'));
                         case 'mustahik':
-                            return redirect()->to(base_url('dashboard'));
+                            return redirect()->to(base_url('mustahik/dashboard'));
                         case 'muzaki':
-                            return redirect()->to(base_url('dashboard'));
+                            return redirect()->to(base_url('muzaki/dashboard'));
                         default:
                             return redirect()->to(base_url('/'));
                     }
