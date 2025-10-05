@@ -97,10 +97,9 @@ class Survey extends BaseController
                 else
                     $this->SurveyModel->update($value->id, $value);
             }
-            $conn->transComplete();
             $a = $this->hitung($param[0]->id_pendaftaran);
             $layak = true;
-
+            
             foreach ($a as $key => $value) {
                 $item = [
                     "id_pendaftaran" => $param[0]->id_pendaftaran,
@@ -108,11 +107,16 @@ class Survey extends BaseController
                     "rekap" => $value->total,
                 ];
                 $this->rekom->insert($item);
-                if($value->total < $value->bobot) $layak = false;
+                if($value->total < $value->bobot){
+                     $layak = false;
+
+                } 
             }
-
-            if($layak) $this->pendaftaran->update($param[0]->id_pendaftaran, ['status_pengajuan'=>$layak ? 'disetujui' : 'ditolak']);
-
+            $nilai = $layak ? 'disetujui' : 'ditolak';
+            
+            $this->pendaftaran->update($param[0]->id_pendaftaran, ['status_pengajuan'=> $nilai]);
+            
+            $conn->transComplete();
             return $this->response->setJSON([
                 'status' => 'success',
                 'message' => 'Data berhasil diubah'
@@ -121,7 +125,7 @@ class Survey extends BaseController
             return $this->response->setJSON([
                 'status' => 'error',
                 'message' => $th->getMessage()
-            ]);
+            ])->setStatusCode(400);
         }
     }
 

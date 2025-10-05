@@ -75,8 +75,15 @@
                                 </div>
 
                                 <!-- NUMBER -->
-                                <div ng-if="q.type == 'number'">
-                                    <input type="number"
+                                <div ng-if="q.type == 'number' && q.id != '29'">
+                                    <input type="text"
+                                        class="form-control form-control-lg border-primary shadow-sm rounded-2"
+                                        ng-model="q.jawaban"
+                                        placeholder="Masukkan jawaban..." mask-currency="'Rp. '" config="{group:'.',decimalSize:'0',indentation:' '}">
+                                </div>
+
+                                <div ng-if="q.type == 'number' && q.id == '29'">
+                                    <input type="text"
                                         class="form-control form-control-lg border-primary shadow-sm rounded-2"
                                         ng-model="q.jawaban"
                                         placeholder="Masukkan jawaban...">
@@ -91,10 +98,6 @@
                 <div class="text-center mt-4">
                     <button type="submit" class="btn btn-primary btn-lg px-5 shadow rounded-pill">
                         <i class="fas fa-paper-plane me-2"></i> Kirim Jawaban
-                    </button>
-                    <button type="button" class="btn btn-secondary btn-lg px-5 shadow rounded-pill"
-                        ng-click="submitSurvey()">
-                        <i class="fas fa-vial me-2"></i> Test
                     </button>
                 </div>
             </form>

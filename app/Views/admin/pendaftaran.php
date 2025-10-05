@@ -34,7 +34,7 @@
                                     <?php endif;?>
                                     <!-- <button class="btn btn-sm btn-danger btn-circle" ng-click="delete(item)"><i class="fas fa-trash"></i></button> -->
                                      <?php if(session()->get('akses')=='petugas'):?>
-                                    <a href="/mustahik/survey/{{item.id}}" class="btn btn-sm btn-primary btn-circle"><i class="fas fa-poll"></i></a>
+                                    <a href="/mustahik/survey/{{item.id}}" ng-show="item.status_pengajuan == 'diverifikasi'" class="btn btn-sm btn-primary btn-circle"><i class="fas fa-poll"></i></a>
                                     <?php endif;?>
                                 </td>
                             </tr>

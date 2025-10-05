@@ -72,10 +72,10 @@
 
                             <!-- NUMBER -->
                             <div ng-if="q.type == 'number'">
-                                <input type="number" 
+                                <input type="text" 
                                        class="form-control form-control-lg border-primary shadow-sm rounded-2" 
                                        ng-model="jawaban[q.id]" 
-                                       placeholder="Masukkan jawaban..." ng-disabled="datas.survey.length != 0">
+                                       placeholder="Masukkan jawaban..." ng-disabled="datas.survey.length != 0" mask-currency="'Rp. '" config="{group:'.',decimalSize:'0',indentation:' '}">
                             </div>
                         </div>
                     </div>
@@ -86,9 +86,6 @@
             <div class="text-center mt-4">
                 <button type="submit" class="btn btn-primary btn-lg px-5 shadow rounded-pill">
                     <i class="fas fa-paper-plane me-2"></i> Kirim Jawaban
-                </button>
-                <button type="button" class="btn btn-primary btn-lg px-5 shadow rounded-pill" ng-click = "submitSurvey()">
-                    <i class="fas fa-paper-plane me-2"></i> test
                 </button>
             </div>
         </form>

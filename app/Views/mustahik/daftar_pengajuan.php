@@ -56,12 +56,14 @@
                         <tr>
                             <th>No</th>
                             <th>Kriteria</th>
+                            <th>Syarat Minimum</th>
                             <th>Nilai Rekapitulasi</th>
                             <th>Status</th>
                         </tr>
-                        <tr ng-repeat="item in rekom">
+                        <tr ng-repeat="item in rekom" ng-class="{'bg-danger text-white' : item.rekap < item.bobot }">
                             <th>{{$index+1}}</th>
                             <th>{{item.nama_kriteria}}</th>
+                            <th>{{item.bobot}}</th>
                             <th>{{item.rekap}}</th>
                             <th>{{item.rekap >= item.bobot ? 'Layak': 'Tidak Layak'}}</th>
                         </tr>

@@ -19,8 +19,7 @@ angular
   .controller("daftarPembayaranController", daftarPembayaranController)
   .controller("laporanPembayaranController", laporanPembayaranController)
   .controller("laporanBantuanController", laporanBantuanController)
-  .controller("pembayaranMustahikController", pembayaranMustahikController)
-  ;
+  .controller("pembayaranMustahikController", pembayaranMustahikController);
 
 function dashboardController($scope, dashboardServices) {
   $scope.$emit("SendUp", "Beranda");
@@ -467,10 +466,6 @@ function surveyController($scope, helperServices, surveyServices, pesan) {
                 q.jawaban = null; // radio/number string kosong
               }
             }
-          } else {
-            if (q.type === "number") {
-              q.jawaban = parseFloat(q.jawaban);
-            }
           }
         });
       });
@@ -670,6 +665,12 @@ function pengajuanController($scope, helperServices, pengajuanServices, pesan) {
   if (helperServices.lastPath == "pengajuan") {
     $scope.$emit("SendUp", "Daftar Pengajuan");
     pengajuanServices.get().then((res) => {
+      res.forEach((element) => {
+        element.rekomendasi.forEach((rekom) => {
+          rekom.bobot = parseInt(rekom.bobot);
+          rekom.rekap = parseInt(rekom.rekap);
+        });
+      });
       $scope.datas = res;
       console.log(res);
     });
@@ -740,7 +741,6 @@ function daftarPengajuanController(
   daftarPengajuanServices,
   pesan
 ) {
-  
   $scope.datas = [];
   $scope.title = "Beranda";
   $scope.model = {};
