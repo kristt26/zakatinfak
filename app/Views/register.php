@@ -13,7 +13,12 @@
     <link href="/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="/assets/css/ruang-admin.min.css" rel="stylesheet">
-
+    <style>
+        small.text-danger {
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 
 <body class="bg-gradient-login">
@@ -34,23 +39,35 @@
                                         <div class="form-group">
                                             <label>Nama</label>
                                             <input type="text" name="nama" class="form-control" placeholder="Nama Lengkap" value="<?= set_value('nama') ?>">
-                                            <?php if (isset($validation)) echo $validation->getError('nama'); ?>
+                                            <?php if (isset($validation)) : ?>
+                                                <small class="text-danger"><?= $validation->getError('nama'); ?></small>
+                                            <?php endif; ?>
                                         </div>
+
                                         <div class="form-group">
                                             <label>Telepon</label>
                                             <input type="text" name="telepon" class="form-control" placeholder="Telepon" value="<?= set_value('telepon') ?>">
-                                            <?php if (isset($validation)) echo $validation->getError('telepon'); ?>
+                                            <?php if (isset($validation)) : ?>
+                                                <small class="text-danger"><?= $validation->getError('telepon'); ?></small>
+                                            <?php endif; ?>
                                         </div>
+
                                         <div class="form-group">
                                             <label>Email</label>
                                             <input type="email" name="email" class="form-control" placeholder="Email" value="<?= set_value('email') ?>">
-                                            <?php if (isset($validation)) echo $validation->getError('email'); ?>
+                                            <?php if (isset($validation)) : ?>
+                                                <small class="text-danger"><?= $validation->getError('email'); ?></small>
+                                            <?php endif; ?>
                                         </div>
+
                                         <div class="form-group">
                                             <label>Alamat</label>
                                             <textarea name="alamat" class="form-control"><?= set_value('alamat') ?></textarea>
-                                            <?php if (isset($validation)) echo $validation->getError('alamat'); ?>
+                                            <?php if (isset($validation)) : ?>
+                                                <small class="text-danger"><?= $validation->getError('alamat'); ?></small>
+                                            <?php endif; ?>
                                         </div>
+
                                         <div class="form-group">
                                             <label>Role</label>
                                             <select name="role" class="form-control">
@@ -58,18 +75,25 @@
                                                 <option value="muzaki" <?= set_select('role', 'muzaki') ?>>Muzaki</option>
                                                 <option value="mustahik" <?= set_select('role', 'mustahik') ?>>Mustahik</option>
                                             </select>
-                                            <?php if (isset($validation)) echo $validation->getError('role'); ?>
+                                            <?php if (isset($validation)) : ?>
+                                                <small class="text-danger"><?= $validation->getError('role'); ?></small>
+                                            <?php endif; ?>
                                         </div>
 
                                         <div class="form-group">
                                             <label>Username</label>
                                             <input type="text" name="username" class="form-control" placeholder="Username" value="<?= set_value('username') ?>">
-                                            <?php if (isset($validation)) echo $validation->getError('username'); ?>
+                                            <?php if (isset($validation)) : ?>
+                                                <small class="text-danger"><?= $validation->getError('username'); ?></small>
+                                            <?php endif; ?>
                                         </div>
+
                                         <div class="form-group">
                                             <label>Password</label>
                                             <input type="password" name="password" class="form-control" placeholder="Password">
-                                            <?php if (isset($validation)) echo $validation->getError('password'); ?>
+                                            <?php if (isset($validation)) : ?>
+                                                <small class="text-danger"><?= $validation->getError('password'); ?></small>
+                                            <?php endif; ?>
                                         </div>
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-primary btn-block">Register</button>

@@ -100,7 +100,37 @@ class Auth extends BaseController
                 'role' => 'required|in_list[muzaki,mustahik]'
             ];
 
-            if ($this->validate($rules)) {
+            $messages = [
+                'nama' => [
+                    'required'   => 'Nama wajib diisi.',
+                    'min_length' => 'Nama minimal terdiri dari 3 karakter.',
+                    'max_length' => 'Nama maksimal terdiri dari 100 karakter.'
+                ],
+                'telepon' => [
+                    'required'   => 'Nomor telepon wajib diisi.',
+                    'min_length' => 'Nomor telepon minimal 10 digit.',
+                    'max_length' => 'Nomor telepon maksimal 20 digit.'
+                ],
+                'alamat' => [
+                    'required' => 'Alamat wajib diisi.'
+                ],
+                'username' => [
+                    'required'   => 'Username wajib diisi.',
+                    'min_length' => 'Username minimal terdiri dari 3 karakter.',
+                    'max_length' => 'Username maksimal terdiri dari 50 karakter.',
+                    'is_unique'  => 'Username sudah digunakan, silakan pilih yang lain.'
+                ],
+                'password' => [
+                    'required'   => 'Password wajib diisi.',
+                    'min_length' => 'Password minimal terdiri dari 6 karakter.'
+                ],
+                'role' => [
+                    'required' => 'Peran pengguna wajib diisi.',
+                    'in_list'  => 'Peran harus antara “muzaki” atau “mustahik”.'
+                ]
+            ];
+
+            if ($this->validate($rules,$messages)) {
                 $userModel = new UsersModel();
                 $muzakiModel = new MuzakiModel();
                 $mustahikModel = new MustahikModel();
