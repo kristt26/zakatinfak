@@ -71,7 +71,9 @@
                             <label class="form-label d-block mb-2">{{item.nama_persyaratan}}</label>
                             <label class="btn btn-outline-secondary btn-sm w-100 d-flex align-items-center justify-content-center">
                                 <i class="fas fa-upload me-3"></i>&nbsp;
-                                <input type="file" class="form-control" id="customFile" ng-model="item.berkas" base-sixty-four-input required>
+                                <input ng-if="item.jenis == 'surat'" accept="application/pdf" type="file" class="form-control" id="customFile" ng-model="item.berkas" base-sixty-four-input required>
+                                <input ng-if="item.jenis == 'gambar'" accept="image/jpeg,image/gif,image/png, image/jpg" type="file" class="form-control" id="customFile" ng-model="item.berkas" base-sixty-four-input required>
+                                <input ng-if="item.jenis == 'all'" accept="image/jpeg,image/gif,image/png, image/jpg, application/pdf" type="file" class="form-control" id="customFile" ng-model="item.berkas" base-sixty-four-input required>
                             </label>
                         </div>
 

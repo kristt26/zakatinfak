@@ -10,7 +10,7 @@ class PersyaratanModel extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nama_persyaratan','id_jenis_bantuan'];
+    protected $allowedFields    = ['nama_persyaratan','id_jenis_bantuan', 'jenis'];
 
     protected bool $allowEmptyInserts = false;
 }

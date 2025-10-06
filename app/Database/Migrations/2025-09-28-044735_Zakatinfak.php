@@ -73,7 +73,8 @@ class Zakatinfak extends Migration
         $this->forge->addField([
             'id'               => ['type' => 'INT','auto_increment' => true],
             'nama_persyaratan' => ['type' => 'VARCHAR','constraint' => 255,'null' => true],
-            'id_jenis_bantuan'   => ['type' => 'INT'],
+            'id_jenis_bantuan' => ['type' => 'INT'],
+            'jenis'            => ['type' => 'VARCHAR','constraint' => 255,'null' => true],
         ]);
         $this->forge->addKey('id', true);
         $this->forge->addForeignKey('id_jenis_bantuan', 'jenis_bantuan', 'id');
