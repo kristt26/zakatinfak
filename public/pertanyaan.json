@@ -152,7 +152,8 @@
         {"label": "Warisan / Hibah", "skor": 0},
         {"label": "Beli", "skor": 0},
         {"label": "Bagi Hasil", "skor": 2},
-        {"label": "Sewa", "skor": 3}
+        {"label": "Sewa", "skor": 3},
+        {"label": "Tidak ada", "skor": 0}
       ]
     },
     {
@@ -162,7 +163,8 @@
         {"label": "<500 m2", "skor": 1},
         {"label": "500–1.000 m2", "skor": 0},
         {"label": "1.000–2.000 m2", "skor": -1},
-        {"label": ">2.000 m2", "skor": -2}
+        {"label": ">2.000 m2", "skor": -2},
+        {"label": "Tidak ada", "skor": 0}
       ]
     },
     {
@@ -180,7 +182,8 @@
         {"label": "Unggas", "skor": 0},
         {"label": "Kambing", "skor": 0},
         {"label": "Sapi", "skor": -1},
-        {"label": "Kerbau", "skor": -1}
+        {"label": "Kerbau", "skor": -1},
+        {"label": "Tidak ada", "skor": 0}
       ]
     },
     {
@@ -190,7 +193,8 @@
         {"label": "Warisan / Hibah", "skor": 0},
         {"label": "Beli", "skor": 0},
         {"label": "Bagi Hasil", "skor": 2},
-        {"label": "Sewa", "skor": 3}
+        {"label": "Sewa", "skor": 3},
+        {"label": "Tidak ada", "skor": 0}
       ]
     },
     {
@@ -208,7 +212,8 @@
         {"label": "Sepeda", "skor": 0},
         {"label": "Sepeda motor", "skor": 0},
         {"label": "Mobil", "skor": -1},
-        {"label": "Mobil pick up", "skor": -1}
+        {"label": "Mobil pick up", "skor": -1},
+        {"label": "Tidak ada", "skor": 0}
       ]
     },
     {
@@ -219,7 +224,8 @@
         {"label": "Beli", "skor": 0},
         {"label": "Titipan", "skor": 0},
         {"label": "Bagi Hasil", "skor": 1},
-        {"label": "Sewa", "skor": 3}
+        {"label": "Sewa", "skor": 3},
+        {"label": "Tidak ada", "skor": 0}
       ]
     },
     {
@@ -242,7 +248,8 @@
         {"label": "Mesin cuci", "skor": -1},
         {"label": "AC", "skor": -1},
         {"label": "Kipas angin", "skor": -1},
-        {"label": "Dispenser", "skor": -1}
+        {"label": "Dispenser", "skor": -1},
+        {"label": "Tidak ada", "skor": 0}
       ]
     },
     {
@@ -252,7 +259,8 @@
         {"label": "Kursi", "skor": -1},
         {"label": "Sofa", "skor": -1},
         {"label": "Meja", "skor": -1},
-        {"label": "Lemari", "skor": -1}
+        {"label": "Lemari", "skor": -1},
+        {"label": "Tidak ada", "skor": 0}
       ]
     },
     {
@@ -262,7 +270,8 @@
         {"label": "Emas", "skor": -1},
         {"label": "Perak", "skor": -1},
         {"label": "Batu berharga", "skor": -1},
-        {"label": "Tabungan", "skor": -1}
+        {"label": "Tabungan", "skor": -1},
+        {"label": "Tidak ada", "skor": 0}
       ]
     }
   ]

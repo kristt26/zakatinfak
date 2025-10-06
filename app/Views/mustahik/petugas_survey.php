@@ -97,7 +97,7 @@
                 <!-- Tombol -->
                 <div class="text-center mt-4">
                     <button type="submit" class="btn btn-primary btn-lg px-5 shadow rounded-pill">
-                        <i class="fas fa-paper-plane me-2"></i> Kirim Jawaban
+                        <i class="fas fa-paper-plane me-2"></i> Verifikasi
                     </button>
                 </div>
             </form>
