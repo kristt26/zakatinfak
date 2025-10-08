@@ -13,6 +13,7 @@ class Pendaftaran extends BaseController
     protected $bantuan;
     protected $persyaratan;
     protected $kelengkapan;
+    protected $rekom;
     protected $lib;
 
     public function __construct()
@@ -23,6 +24,7 @@ class Pendaftaran extends BaseController
         $this->bantuan = new \App\Models\Jenis_bantuanModel();
         $this->persyaratan = new \App\Models\PersyaratanModel();
         $this->kelengkapan = new \App\Models\KelengkapanModel();
+        $this->rekom = new \App\Models\RekomendasiModel();
         $this->lib = new \App\Libraries\Decode();
     }
 
@@ -43,6 +45,9 @@ class Pendaftaran extends BaseController
             ->join('jenis_bantuan', 'jenis_bantuan.id=pendaftaran.id_jenis_bantuan', 'left')
             ->orderBy('pendaftaran.id', 'desc')
             ->findAll();
+        foreach ($data as $key => $value) {
+            $value->rekomendasi =  $this->rekom->select("rekomendasi.*, kriteria.nama_kriteria, kriteria.bobot")->join('kriteria', 'kriteria.id = rekomendasi.id_kriteria', 'left')->where('id_pendaftaran', $value->id)->findAll();
+        }
         return $this->response->setJSON($data);
     }
 

@@ -813,6 +813,11 @@ function daftarPengajuanController(
         });
       });
   };
+
+  $scope.showRekom = (param) => {
+    $scope.rekom = param;
+    $("#modelId").modal("show");
+  };
 }
 
 function pembayaranController(
