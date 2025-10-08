@@ -13,10 +13,6 @@
                                    id="nama_persyaratan" 
                                    ng-model="model.nama_persyaratan" 
                                    placeholder="Nama Persyaratan" required>
-                            <input type="text" class="form-control form-control-sm" 
-                                   id="jenis" 
-                                   ng-model="model.jenis" 
-                                   placeholder="Jenis Berkas" required>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -65,7 +61,7 @@
                             <tr ng-repeat="item in datas track by item.id">
                                 <td>{{$index+1}}</td>
                                 <td>{{item.nama_persyaratan}}</td>
-                                <td>{{item.jenis=='surat' ? 'PDF': item.jenis =='gambar':'Gambar' : 'PDF dan Gambar'}}</td>
+                                <td>{{item.jenis=='surat' ? 'PDF': item.jenis =='gambar'?'Gambar' : 'PDF dan Gambar'}}</td>
                                 <td>
                                     <button class="btn btn-sm btn-warning btn-circle" ng-click="edit(item)">
                                         <i class="fas fa-edit"></i>

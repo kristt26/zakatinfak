@@ -37,7 +37,7 @@
                                 <option value="">---Pilih Akses---</option>
                                 <option value="admin">Admin</option>
                                 <option value="petugas">Petugas</option>
-                                <option value="pimpinan">Pimpinan</option>
+                                <!-- <option value="pimpinan">Pimpinan</option> -->
                             </select>
                         </div>
                     </div>
