@@ -31,7 +31,7 @@
                                     <a href="/mustahik/pengajuan/ubah_pengajuan/{{item.id}}" ng-show="item.pesan" class="btn btn-sm btn-secondary btn-circle"><i class="fas fa-edit"></i></a>
                                     <!-- <button class="btn btn-sm btn-danger btn-circle" ng-click="delete(item)"><i class="fas fa-trash"></i></button> -->
                                     <a href="/mustahik/survey/{{item.id}}" class="btn btn-sm btn-primary btn-circle" bs-tooltip title="Isi Survey Faktual"><i class="fas fa-poll"></i></a>
-                                    <button ng-show="item.rekomendasi.length !=0" class="btn btn-info btn-sm" bs-tooltip title="Rekomendasi" ng-click="showRekom(item.rekomendasi)"><i class="fas fa-eye"></i></button>
+                                    <!-- <button ng-show="item.rekomendasi.length !=0" class="btn btn-info btn-sm" bs-tooltip title="Rekomendasi" ng-click="showRekom(item.rekomendasi)"><i class="fas fa-eye"></i></button> -->
                                 </td>
                             </tr>
                         </tbody>
